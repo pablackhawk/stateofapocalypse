@@ -18,7 +18,7 @@ app.use(methodOverride('_method'))
 // Routes
 require('./routes/html-routes.js')(app)
 require("'/routes/api-routes.js")(app)
-require('./routes/post-api-routes.js')
+require('./routes/post-api-routes.js')(app)
 
 db.sequelize.sync({ force: true }).then(function() {
   app.listen(PORT, function() {
