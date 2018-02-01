@@ -2,40 +2,35 @@ const express = require("express");
 
 const router = express.Router();
 
-const db = require("../models/");
+const db = require("../models");
+//Connection to the server
+module.exports = function(app) {
 
-router.get("/", function(req, res) {
+app.get("/", function(req, res) {
     res.redirect("/products");
 });
 
-router.get("/burgers", function(req, res) {
-    db.products.findAll().then(function(dbProduct) {
-        console.log
-    })
-})
-
-//tutoring ^
-
-const db = require("../models");
-
-module.exports = function(app) {
-    app.get("/api/survival/", function(req, res) {
-        db.survival_db.findAll({})
+//Homepage route
+app.get("/products", function(req, res) {
+    db.Products.findAll({})
         .then(function(dbSurvival) {
             res.json(dbSurvival);
         });
-    });
+});
 
-    app.get("api/posts/:category", function(req,res) {
-        db.survival_db.findAll({
-            where: {
+//Specific category route
+app.get("/products/:category", function(req, res) {
+    console.log(req.params.category);
+    db.Products.findAll({
+        where: {
                 category: req.params.category
-            }
-        })
-        .then(function(dbSurvival) {
+        }
+    })
+    .then(function(dbSurvival) {
             res.json(dbSurvival);
-        });
     });
+});
 
+//Recommendation products route
 
 };
