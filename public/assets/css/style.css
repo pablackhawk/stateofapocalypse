@@ -1,9 +1,10 @@
 body {
   font-family: 'Russo-One', sans-serif;
+  color: white;
+  background-color: rgba(34, 33, 33, 0.904);
 }
 nav ul a,
 nav .brand-logo {
-  color: black;
   font-family: 'Russo-One', sans-serif;
 }
 
