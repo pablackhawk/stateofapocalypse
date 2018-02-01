@@ -9,13 +9,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postData": "node schema.js",
-    "start": "node index.js"
+    "start": "nodemon index.js"
+
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pablackhawk/proj2group6.git"
   },
-  "author": "",
+  "author": "Laurentius Tirtarahardja, Rebecca A. Olson, Michael Klingelberg",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/pablackhawk/proj2group6/issues"
@@ -29,6 +30,7 @@
     "method-override": "^2.3.10",
     "mysql": "^2.15.0",
     "mysql2": "^1.5.1",
+    "nodemon": "^1.14.11",
     "request": "^2.83.0",
     "sequelize": "^4.32.2"
   }

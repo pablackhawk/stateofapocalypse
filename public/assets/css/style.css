@@ -1,16 +1,41 @@
-
-
+body {
+  font-family: 'Russo-One', sans-serif;
+  color: white;
+  background-color: rgba(54, 54, 54, 0.904);
+}
 nav ul a,
 nav .brand-logo {
-  color: rgb(253, 252, 252);
+  background-color: rgba(54, 54, 54, 0.904);
+  font-family: 'Russo-One', sans-serif;
+}
+.soa-nav {
+  background-color: rgba(54, 54, 54, 0.904);
+}
+
+.dropdown-button {
+  margin-top: 1.5%;
 }
 
 p {
   line-height: 2rem;
 }
 
+h1 {
+  font-family: 'Creepster', cursive;
+  color: rgba(197, 9, 9, 0.925) !important;
+}
+
 .button-collapse {
   color: #fcfcfc;
+}
+
+.card-image {
+  max-height: 80vh;
+}
+
+.activator {
+  max-height: 80vh;
+  object-fit: cover;
 }
 
 .parallax-container {
@@ -19,11 +44,16 @@ p {
   height: auto;
   color: rgba(255, 255, 255, 0.9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
+.parallax-container .section {
+  width: 100%;
+}
 
-@media only screen and (max-width : 992px) {
+.parallax-image {
+  width: 125%;
+  height: inherit;
+}
+
+@media only screen and (max-width: 992px) {
   .parallax-container .section {
     position: absolute;
     top: 40%;
@@ -33,7 +63,7 @@ p {
   }
 }
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width: 600px) {
   #index-banner .section {
     top: 0;
   }
