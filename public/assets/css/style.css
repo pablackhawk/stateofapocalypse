@@ -1,12 +1,16 @@
-
-
 nav ul a,
 nav .brand-logo {
-  color: rgb(253, 252, 252);
+  color: black;
+  font-family: 'Russo-One', sans-serif;
 }
 
 p {
   line-height: 2rem;
+}
+
+h1 {
+  font-family: 'Creepster', cursive;
+  color: rgba(197, 9, 9, 0.925) !important;
 }
 
 .button-collapse {
@@ -19,11 +23,16 @@ p {
   height: auto;
   color: rgba(255, 255, 255, 0.9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
+.parallax-container .section {
+  width: 100%;
+}
 
-@media only screen and (max-width : 992px) {
+.parallax-image {
+  width: 125%;
+  height: inherit;
+}
+
+@media only screen and (max-width: 992px) {
   .parallax-container .section {
     position: absolute;
     top: 40%;
@@ -33,7 +42,7 @@ p {
   }
 }
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width: 600px) {
   #index-banner .section {
     top: 0;
   }
