@@ -4,7 +4,7 @@ const bodyParser = require('body-parser')
 const methodOverride = require('method-override')
 
 // Express App
-let app = express()
+let app = express();
 const PORT = process.env.PORT || 5150
 
 // Models
