@@ -1,7 +1,19 @@
+body {
+  font-family: 'Russo-One', sans-serif;
+  color: white;
+  background-color: rgba(54, 54, 54, 0.904);
+}
 nav ul a,
 nav .brand-logo {
-  color: black;
+  background-color: rgba(54, 54, 54, 0.904);
   font-family: 'Russo-One', sans-serif;
+}
+.soa-nav {
+  background-color: rgba(54, 54, 54, 0.904);
+}
+
+.dropdown-button {
+  margin-top: 1.5%;
 }
 
 p {
@@ -15,6 +27,15 @@ h1 {
 
 .button-collapse {
   color: #fcfcfc;
+}
+
+.card-image {
+  max-height: 80vh;
+}
+
+.activator {
+  max-height: 80vh;
+  object-fit: cover;
 }
 
 .parallax-container {
