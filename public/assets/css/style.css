@@ -16,6 +16,10 @@ nav .brand-logo {
   margin-top: 1.5%;
 }
 
+.page-counter {
+  background-color: rgba(206, 125, 19, 0.9);
+}
+
 p {
   line-height: 2rem;
 }
@@ -30,7 +34,7 @@ h1 {
 }
 
 .card-image {
-  max-height: 80vh;
+  height: 45vh;
 }
 
 .activator {
@@ -78,4 +82,9 @@ h1 {
 
 footer.page-footer {
   margin: 0;
+  background-color: rgba(197, 9, 9, 0.925) !important;
+}
+
+.footer-copyright {
+  background-color: rgba(197, 9, 9, 0.925) !important;
 }
