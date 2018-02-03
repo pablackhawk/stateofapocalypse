@@ -28,6 +28,10 @@ module.exports = function (sequelize, DataTypes){
         video_link: {
             type: DataTypes.STRING,
             allowNull: true
+        },
+        image_link: {
+            type: DataTypes.STRING,
+            allowNull: true
         }
      }, {
             timestamps: false
