@@ -76,6 +76,14 @@ footer.page-footer {
   background-color: rgba(197, 9, 9, 0.925) !important;
 }
 
+footer.page-footer h5 {
+  width: 550px;
+}
+
+footer.page-footer p {
+  width: 550px;
+}
+
 .footer-copyright {
   background-color: rgba(197, 9, 9, 0.925) !important;
 }
@@ -103,6 +111,14 @@ footer.page-footer {
 .review-link3 {
   position: relative;
   left: 40%;
+}
+
+.pagination {
+  margin-bottom: 2%;
+}
+
+.dropdown-content {
+  width: 175px !important;
 }
 
 @media only screen and (max-width: 992px) {
