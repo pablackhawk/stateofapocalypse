@@ -113,6 +113,14 @@ footer.page-footer p {
   left: 40%;
 }
 
+.pagination {
+  margin-bottom: 2%;
+}
+
+.dropdown-content {
+  width: 175px !important;
+}
+
 @media only screen and (max-width: 992px) {
   .parallax-container .section {
     position: absolute;
