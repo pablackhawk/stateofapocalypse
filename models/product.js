@@ -25,6 +25,15 @@ module.exports = function (sequelize, DataTypes){
             type: DataTypes.STRING,
             allowNull: false
         },
+        video_link: {
+            type: DataTypes.STRING,
+            allowNull: true
+        }
+     }, {
+            timestamps: false
     });
     return Products;
 }
+
+    
+
