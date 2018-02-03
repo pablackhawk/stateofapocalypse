@@ -76,6 +76,14 @@ footer.page-footer {
   background-color: rgba(197, 9, 9, 0.925) !important;
 }
 
+footer.page-footer h5 {
+  width: 550px;
+}
+
+footer.page-footer p {
+  width: 550px;
+}
+
 .footer-copyright {
   background-color: rgba(197, 9, 9, 0.925) !important;
 }
