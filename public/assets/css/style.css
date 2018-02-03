@@ -1,16 +1,52 @@
-
-
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Russo-One', sans-serif;
+  color: white;
+  background-color: rgba(54, 54, 54, 0.904);
+}
 nav ul a,
 nav .brand-logo {
-  color: rgb(253, 252, 252);
+  background-color: rgba(54, 54, 54, 0.904);
+  font-family: 'Russo-One', sans-serif;
+}
+.soa-nav {
+  background-color: rgba(54, 54, 54, 0.904);
+}
+
+.dropdown-button {
+  margin-top: 1.5%;
+}
+
+.page-counter {
+  background-color: rgba(206, 125, 19, 0.9);
 }
 
 p {
   line-height: 2rem;
 }
 
+h1 {
+  font-family: 'Creepster', cursive;
+  color: rgba(197, 9, 9, 0.925) !important;
+}
+
 .button-collapse {
   color: #fcfcfc;
+}
+
+.card {
+  height: 400px;
+}
+
+.card-image {
+  height: 75%;
+}
+
+.activator {
+  max-height: 100%;
+  object-fit: cover;
 }
 
 .parallax-container {
@@ -19,24 +55,13 @@ p {
   height: auto;
   color: rgba(255, 255, 255, 0.9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
+.parallax-container .section {
+  width: 100%;
 }
 
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
+.parallax-image {
+  width: 125%;
+  height: inherit;
 }
 
 .icon-block {
@@ -48,4 +73,50 @@ p {
 
 footer.page-footer {
   margin: 0;
+  background-color: rgba(197, 9, 9, 0.925) !important;
+}
+
+.footer-copyright {
+  background-color: rgba(197, 9, 9, 0.925) !important;
+}
+
+.review-links {
+  text-align: center;
+  width: 100%;
+  align-self: auto;
+}
+
+.review-link1,
+.review-link2,
+.review-link3 {
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: auto;
+}
+
+.review-link2 {
+  position: relative;
+  left: 20%;
+}
+
+.review-link3 {
+  position: relative;
+  left: 40%;
+}
+
+@media only screen and (max-width: 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #index-banner .section {
+    top: 0;
+  }
 }
