@@ -32,5 +32,18 @@ app.get("/products/:category", function(req, res) {
 });
 
 //Recommendation products route
+// app.get("/products/recommend", function(req, res) {
+//     db.Products.findAll({})
+//         .then(function(dbSurvival) {
+//             res.json(dbSurvival);
+//         });
+// });
+
+
+
+
+
+
+
 
 };
