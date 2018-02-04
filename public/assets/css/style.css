@@ -41,12 +41,14 @@ h1 {
 }
 
 .card-image {
-  height: 75%;
+  height: 70%;
+  width: auto;
+  object-fit: cover;
 }
 
 .activator {
   max-height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .parallax-container {
@@ -111,6 +113,14 @@ footer.page-footer p {
 .review-link3 {
   position: relative;
   left: 40%;
+}
+
+.pagination {
+  margin-bottom: 2%;
+}
+
+.dropdown-content {
+  width: 175px !important;
 }
 
 @media only screen and (max-width: 992px) {
