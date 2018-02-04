@@ -10,6 +10,7 @@ nav ul a,
 nav .brand-logo {
   background-color: rgba(54, 54, 54, 0.904);
   font-family: 'Russo-One', sans-serif;
+  color: white !important;
 }
 .soa-nav {
   background-color: rgba(54, 54, 54, 0.904);
@@ -17,6 +18,14 @@ nav .brand-logo {
 
 .dropdown-button {
   margin-top: 1.5%;
+}
+
+.dropdown-content {
+  color: white !important;
+}
+
+.challenge-statement {
+  padding-top: 5%;
 }
 
 .page-counter {
@@ -27,9 +36,13 @@ p {
   line-height: 2rem;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Creepster', cursive;
   color: rgba(197, 9, 9, 0.925) !important;
+  text-shadow: 2px 2px #2b2a2a;
 }
 
 .button-collapse {
@@ -71,6 +84,10 @@ h1 {
 }
 .icon-block .material-icons {
   font-size: inherit;
+}
+
+.divider {
+  margin: 3% 0;
 }
 
 footer.page-footer {
