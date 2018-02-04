@@ -3,13 +3,14 @@ $(document).ready(function() {
     // debugger;
     // console.log(event);
     let query = $(this).attr('id');
-    console.log(query);
-    let queryURL = '/products';
+    // console.log(query);
+    let queryURL = '/api/products';
     $.ajax({
       url: queryURL,
       method: 'GET',
     }).done(function(response) {
-      console.log(response);
+      // console.log(response);
+      $('.product-div').empty();
       if (response < 1) {
         // Displays message if no products match query
         $('.product-div').html('<h3>No Products Found!</h3>');
@@ -22,8 +23,8 @@ $(document).ready(function() {
             let productImageDiv = $(
               '<div class="card-image waves-effect waves-block waves-light">'
             );
-            // let productImage = $('<img class="activator">');
-            // productImage.attr('src', response[i].image_link);
+            let productImage = $('<img class="activator">');
+            productImage.attr('src', response[i].image_link);
             let cardContent = $('<div class="card-content">');
             let cardTitleSpan = $(
               '<span class="card-title activator grey-text text-darken-4">'
@@ -36,8 +37,8 @@ $(document).ready(function() {
               videoReview.attr('src', response[i].video_link);
               videoReview.append(cardContent);
             }
-            // productImageDiv.append(productImage);
-            // productCard.append(productImageDiv);
+            productImageDiv.append(productImage);
+            productCard.append(productImageDiv);
             cardTitleSpan.append(cardContent);
             productDiv.append(productCard);
             productDiv.append(cardContent);
