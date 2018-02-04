@@ -18,7 +18,7 @@ $(document).ready(function() {
         // Runs through response array
         for (let i = 0; i < response.length; i++) {
           if (query === response[i].category) {
-            let productDiv = $('<div class="col m6 m4">');
+            let productDiv = $('<div class="products col m6 m4">');
             let productCard = $('<div class="card hoverable">');
             let productImageDiv = $(
               '<div class="card-image waves-effect waves-block waves-light">'
