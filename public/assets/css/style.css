@@ -18,8 +18,7 @@ nav .brand-logo {
 }
 
 .soa-nav {
-  background-color: rgba(54, 54, 54, 0.904);\
-  margin-bottom: 40px;
+  background-color: rgba(54, 54, 54, 0.904);
 }
 
 .dropdown-button {
@@ -32,6 +31,11 @@ nav .brand-logo {
 
 .challenge-statement {
   padding-top: 5%;
+}
+
+.products {
+  margin: 1% 0;
+  height: 650px;
 }
 
 .page-counter {
@@ -149,9 +153,20 @@ footer.page-footer p {
   left: 55px;
 }
 
+.review-score {
+  color: black;
+  position: relative;
+  left: 10px;
+}
+
 .product-description-div {
-  overflow: scroll;
+  width: 90%;
+  position: relative;
+  left: 65px;
+  height: 200px;
+  overflow-y: auto;
   text-overflow: ellipsis;
+  color: black;
 }
 
 .review-link2 {

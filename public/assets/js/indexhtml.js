@@ -48,11 +48,15 @@ $(document).ready(function() {
             let productDescription = $('<p class="product-description">').text(
               response[i].description
             );
+            let productScore = $('<p class="review-score">').html(
+              'Score: ' + response[i].score
+            );
 
             productImageDiv.append(productImage);
             productCard.append(productImageDiv);
             cardContent.append(cardTitleDiv);
             cardContent.append(reviewLink);
+            cardContent.append(productScore);
             cardTitleDiv.append(cardTitle);
             cardProductDescription.append(productDescription);
             cardContent.append(cardProductDescription);

@@ -17,7 +17,8 @@ db.sequelize
           score: 3,
           buy_link: 'https://www.topsknives.com/knives/survival/atax',
           video_link: 'https://www.topsknives.com/knives/survival/atax',
-          image_link: 'https://www.topsknives.com/atax',
+          image_link:
+            'https://s-media-cache-ak0.pinimg.com/originals/72/27/8d/72278d1fb155e8083c657271fcaeda7a.jpg',
           review_link:
             'https://www.amazon.com/Tops-Knives-Atax-Hand-Axe/dp/B00B81X2AU/ref=sr_1_1?ie=UTF8&qid=1517885076&sr=8-1&keywords=ATAX#customerReviews',
         },
@@ -29,7 +30,8 @@ db.sequelize
             "El Chete is the first TOPS knife to be released with our wicked new finish called Acid Rain. Because of the process we use, the finish varies slightly from knife to knife so that each person gets something unique. We wanted the handles to be thick enough to fill each user's hand like a hatchet or small ax handle would, so we decided to use sandwiched Micarta. It's well rounded for comfort and the black canvas Micarta underneath the green canvas Micarta adds even more to the aesthetics of this piece.",
           score: 7,
           buy_link: 'https://www.topsknives.com/knives/survival/el-chete',
-          image_link: 'https://www.topsknives.com/el-chete',
+          image_link:
+            'https://media.midwayusa.com/productimages/880x660/alt3/172/172795.jpg',
           review_link:
             'https://www.amazon.com/Tops-Knives-El-Chete-Knife/dp/B072C2P7QM/ref=sr_1_1?ie=UTF8&qid=1517885136&sr=8-1&keywords=EL+CHETE#customerReviews',
         },
@@ -624,5 +626,4 @@ db.sequelize
     ).then(function(tableProducts) {
       console.log(tableProducts);
     });
-    process.exit();
   });
