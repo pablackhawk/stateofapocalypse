@@ -32,10 +32,10 @@ APIs used are Amazon, YouTube and our own used to gather data from the MySQL dat
 
 ## Authors
 
-* Laurentius Tirtarahardja - HTML/CSS and AJAX JavaScript
+* [Laurentius Tirtarahardja](https://github.com/pablackhawk) - HTML/CSS and AJAX JavaScript
 
-* [Rebecca A. Olson](https://github.com/rebbbeccao) Sequelize Database management and API creator
+* [Rebecca A. Olson](https://github.com/rebbbeccao) - Sequelize Database management and API creator
 
-* [Michael Klingelberg](https://github.com/mdk82) HTML/CSS and Web Scraper author
+* [Michael Klingelberg](https://github.com/mdk82) - HTML/CSS and Web Scraper author
 
 Copyright &copy; 2018 Laurentius Tirtarahardja, Rebecca A. Olson, Michael Klingelberg
