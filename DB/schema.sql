@@ -9,6 +9,7 @@ use survival_db;
 -- 	category VARCHAR(50),
 -- 	score INT(10) NOT NULL,
 -- 	buy_link TEXT NOT NULL,
+--  review_link TEXT NOT NULL,
 -- 	primary key (item_num)
 -- );
 

@@ -16,7 +16,7 @@
 <body>
   <nav class="soa-nav" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="index.html" class="brand-logo">State Of Apocalypse</a>
+      <a id="logo-container" href="index.html"><img src="./assets/images/state-of-apocalypse.png" alt="State of Apocalypse" class="brand-logo"></a>
       <a class='dropdown-button btn right hide-on-med-and-down' data-hover="true" href='#' data-activates='dropdown1'>Drop Me!</a>
       <ul id='dropdown1' class='dropdown-content'>
         <li>
@@ -74,17 +74,65 @@
     </div>
   </nav>
 
+  <div class="row center">
+    <h3 class="header col s12 light">ARE YOU PREPARED?</h3>
+    <p class ="col s12 light">Answer These Questions And Find Out</p>
+  </div>
 
   <!-- form html goes here -->
-  <div class="input-field col s12">
+  <div class="input-field col s12 form">
     <select>
       <option value="" disabled selected>Choose your option</option>
-      <option value="1">Option 1</option>
-      <option value="2">Option 2</option>
-      <option value="3">Option 3</option>
+      <option value="1">Find Shelter</option>
+      <option value="2">Find A Water Source</option>
+      <option value="3">Signal For Help</option>
+    </select>
+    <label class = "question">If you were stranded, what would you do first?</label>
+  </div>
+
+  <div class="input-field col s12 form">
+    <select>
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">Food</option>
+      <option value="2">Water</option>
+      <option value="3">Warmth</option>
+    </select>
+    <label>What's the most important thing you need for survival?</label>
+  </div>
+
+  <div class="input-field col s12 form">
+    <select>
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">To avoid insects</option>
+      <option value="2">To Not Contract Diseses</option>
+      <option value="3">So You Don't Lose Body Heat</option>
     </select>
     <label>Will You Survive?</label>
   </div>
+
+  <div class="input-field col s12 form">
+    <select>
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">Near A Water Source</option>
+      <option value="2">A Dry Cave</option>
+      <option value="3">By A Cliff</option>
+    </select>
+    <label>Where Is The Best Place To Build A Shelter?</label>
+  </div>
+
+  <div class="input-field col s12 form">
+    <select>
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">Forage For Berries</option>
+      <option value="2">Hunt For Small Game</option>
+      <option value="3">Find Insects To Eat</option>
+    </select>
+    <label>How Can You Get Protein Quickly When You Run Out Of Food?</label>
+  </div>
+
+  <button class="btn waves-effect waves-light btn-large form-button" type="submit" name="action">Submit
+    <i class="material-icons"></i>
+  </button>
 
 
   <div class="parallax-container valign-wrapper">
@@ -125,9 +173,11 @@
     crossorigin="anonymous">
     </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="assets/js/indexhtml.js"></script>
   <script src="assets/js/formhtml.js"></script>
   <script>
     $(document).ready(function () {
+      $('select').material_select();
       $('.parallax').parallax();
     });
   </script>

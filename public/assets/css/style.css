@@ -12,8 +12,14 @@ nav .brand-logo {
   font-family: 'Russo-One', sans-serif;
   color: white !important;
 }
+.brand-logo {
+  height: 60px;
+  width: 270px;
+}
+
 .soa-nav {
-  background-color: rgba(54, 54, 54, 0.904);
+  background-color: rgba(54, 54, 54, 0.904);\
+  margin-bottom: 40px;
 }
 
 .dropdown-button {
@@ -51,6 +57,14 @@ h4 {
 
 .card {
   height: 650px;
+}
+
+.form {
+  margin: 50px 475px 50px 475px;
+}
+
+.form-button {
+  margin: 0px 475px 100px 500px;
 }
 
 .card-image {
