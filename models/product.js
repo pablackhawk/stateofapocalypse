@@ -12,6 +12,10 @@ module.exports = function (sequelize, DataTypes){
             type: DataTypes.STRING,
             allowNull: false
         },
+        description: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
         category: {
             type: DataTypes.STRING,
             allowNull: false
@@ -32,7 +36,11 @@ module.exports = function (sequelize, DataTypes){
         image_link: {
             type: DataTypes.STRING,
             allowNull: true
-        }
+        },
+        review_link: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
      }, {
             timestamps: false
     });
