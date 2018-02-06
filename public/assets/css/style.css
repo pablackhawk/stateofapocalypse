@@ -50,13 +50,23 @@ h4 {
 }
 
 .card {
-  height: 400px;
+  height: 650px;
 }
 
 .card-image {
-  height: 70%;
+  height: 50%;
   width: auto;
   object-fit: cover;
+}
+
+.card-title-text {
+  text-align: center;
+}
+
+.card-content {
+  position: relative;
+  top: -335px;
+  left: -25px;
 }
 
 .activator {
@@ -120,6 +130,14 @@ footer.page-footer p {
   margin-left: auto;
   margin-right: auto;
   align-self: auto;
+  position: relative;
+  top: 250px;
+  left: 55px;
+}
+
+.product-description-div {
+  overflow: scroll;
+  text-overflow: ellipsis;
 }
 
 .review-link2 {

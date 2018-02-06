@@ -26,20 +26,36 @@ $(document).ready(function() {
             let productImage = $('<img class="activator">');
             productImage.attr('src', response[i].image_link);
             let cardContent = $('<div class="card-content">');
-            let cardTitleSpan = $(
-              '<span class="card-title activator grey-text text-darken-4">'
-            ).text(response[i].product_name);
-            let expandButton = $(
-              '<i class="material-icons right">See More</i>'
+            let cardTitleDiv = $(
+              '<div class="card-title activator grey-text text-darken-4">'
+            );
+            let cardTitle = $('<p class="card-title-text">').text(
+              response[i].product_name
+            );
+            let reviewLink = $(
+              '<a class="review-link1" href="' +
+                response[i].review_link +
+                '">Reviews</a>'
             );
             if (response[i].video_link !== null) {
               let videoReview = $('<video class="product-video">');
               videoReview.attr('src', response[i].video_link);
               videoReview.append(cardContent);
             }
+            let cardProductDescription = $(
+              '<div class="product-description-div">'
+            );
+            let productDescription = $('<p class="product-description">').text(
+              response[i].description
+            );
+
             productImageDiv.append(productImage);
             productCard.append(productImageDiv);
-            cardTitleSpan.append(cardContent);
+            cardContent.append(cardTitleDiv);
+            cardContent.append(reviewLink);
+            cardTitleDiv.append(cardTitle);
+            cardProductDescription.append(productDescription);
+            cardContent.append(cardProductDescription);
             productDiv.append(productCard);
             productDiv.append(cardContent);
             $('.product-div').append(productDiv);
