@@ -51,11 +51,17 @@ $(document).ready(function() {
             let productScore = $('<p class="review-score">').html(
               'Score: ' + response[i].score
             );
+            let buyLink = $(
+              '<a class="buy-link" href="' +
+                response[i].buy_link +
+                '">Buy Here!</a>'
+            );
 
             productImageDiv.append(productImage);
             productCard.append(productImageDiv);
             cardContent.append(cardTitleDiv);
             cardContent.append(reviewLink);
+            cardContent.append(buyLink);
             cardContent.append(productScore);
             cardTitleDiv.append(cardTitle);
             cardProductDescription.append(productDescription);
@@ -67,7 +73,5 @@ $(document).ready(function() {
         }
       }
     });
-    // This is to not follow the link
-    return false;
   });
 });
