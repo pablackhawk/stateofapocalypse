@@ -1,5 +1,5 @@
 //Connection to server
-module.exports = function (sequelize, DataTypes){
+module.exports = function(sequelize, DataTypes) {
   //To create table
     const Products = sequelize.define("Products", {
         item_num: {
@@ -46,6 +46,3 @@ module.exports = function (sequelize, DataTypes){
     });
     return Products;
 }
-
-    
-

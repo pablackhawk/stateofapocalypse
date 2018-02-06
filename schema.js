@@ -1,4 +1,4 @@
-const db = require("./models");
+const db = require('./models');
 
 //Push data into table
 db.sequelize.sync({
@@ -407,8 +407,8 @@ db.sequelize.sync({
     ],
      {
         ignoreDuplicates: true,
-    }
+      }
     ).then(function(tableProducts) {
-        console.log(tableProducts);
+      console.log(tableProducts);
     });
-});
+  });
