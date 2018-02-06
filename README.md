@@ -8,7 +8,7 @@ If you're not, come check out the gear we've curated to help you make it out the
 
 This project incorporates the use of the Materialize front-end framework, along with JQuery and JavaScript for UX/UI. The site is served up with Node.js, Express and Sequelize for routing, requests, MVC and ORM functionality/methodologies.
 
-APIs used are Amazon, YouTube and our own used to gather data from the MySQL databaase. Node packages include request, method-override, body-parser and cheerio. Web Scraping is utilized as well for data extraction.
+Node packages include request, method-override, body-parser and cheerio. Web Scraping is utilized as well for data extractio.
 
 ### Technologies
 
@@ -34,7 +34,7 @@ APIs used are Amazon, YouTube and our own used to gather data from the MySQL dat
 
 * [Laurentius Tirtarahardja](https://github.com/pablackhawk) - HTML/CSS and AJAX JavaScript
 
-* [Rebecca A. Olson](https://github.com/rebbbeccao) - Sequelize Database management and API creator
+* [Rebecca A. Olson](https://github.com/rebbbeccao) - Sequelize Database management and API author
 
 * [Michael Klingelberg](https://github.com/mdk82) - HTML/CSS and Web Scraper author
 
