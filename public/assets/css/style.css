@@ -29,6 +29,10 @@ nav .brand-logo {
   color: white !important;
 }
 
+.activator {
+  margin-top: 2%;
+}
+
 .challenge-statement {
   padding-top: 5%;
 }
@@ -125,38 +129,38 @@ footer.page-footer {
 
 footer.page-footer h5 {
   width: 550px;
+  text-align: center;
 }
 
 footer.page-footer p {
   width: 550px;
+  text-align: center;
+}
+
+.footer-col {
+  position: relative;
+  left: 75px !important;
 }
 
 .footer-copyright {
   background-color: rgba(197, 9, 9, 0.925) !important;
-}
-
-.review-links {
   text-align: center;
-  width: 100%;
-  align-self: auto;
 }
 
-.review-link1,
-.review-link2,
-.review-link3 {
+.review-link1 {
   float: left;
   margin-left: auto;
   margin-right: auto;
   align-self: auto;
   position: relative;
-  top: 250px;
+  top: 260px;
   left: 55px;
 }
 
 .review-score {
   color: black;
   position: relative;
-  left: 10px;
+  left: 50px;
 }
 
 .product-description-div {
@@ -169,14 +173,10 @@ footer.page-footer p {
   color: black;
 }
 
-.review-link2 {
+.buy-link {
   position: relative;
-  left: 20%;
-}
-
-.review-link3 {
-  position: relative;
-  left: 40%;
+  top: 260px;
+  left: 350px;
 }
 
 .pagination {
