@@ -23,8 +23,8 @@ app.get("/api/products", function(req, res) {
 app.get("/api/products/recommend", function(req, res) {
     db.Products.findOne({
             where: {
-                category: "knivesandblades", //insert "random" category
-                item_num: Math.floor((Math.random() * 5) + 1) //hard-code based off of "random catgegory"
+                category: "random", 
+                item_num: Math.floor((Math.random() * 5) + 1) 
                 
             }   
     })
