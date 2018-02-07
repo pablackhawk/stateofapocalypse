@@ -32,13 +32,13 @@ function displayProducts() {
                         " | Score: " +
                         res[i].score +
                         " | Buy Link: " +
-                        res[i].buy_link) +
+                        res[i].buy_link +
                         " | Video Link: " +
-                        res[i].video_link+
+                        res[i].video_link +
                         " | Image Link: " +
-                        res[i].image_link+
+                        res[i].image_link +
                         " | Review Link: " +
-                        res[i].review_link;
+                        res[i].review_link);
             console.log("\n -----------------------------------------------------------------------------");
         }
         initialize();
@@ -59,6 +59,24 @@ function initialize() {
             deleteProduct();
         }   
     });
+}
+
+function deleteProduct() {
+    inquirer.prompt([
+        {
+            name: "addItem",
+            type: "rawlist",
+            message: "Would you like to delete a product from the 'survival_db' database?",
+            choices: ["YES", "NO"] 
+        }
+    ]).then(function(answer) {
+        if (answer.addItem.toUpperCase() === "YES") {
+            deleteItemNumber();
+        } else {
+            console.log("*** Ok, Goodbye!");
+            connection.end(); 
+        }
+    })
 }
 
 function addItem() {
@@ -106,39 +124,23 @@ function addItem() {
             message: "What is the 'review_link' you would like to store with this item?"
         }
     ]).then(function(answer) {
-        connection.query("UPDATE Products SET ? WHERE ?",
+        connection.query("INSERT INTO Products SET ?",
         [
-          {
-            item_num: answer.itemNumber
-          },
-          {
-            product_name: answer.productName
-          },
-          {
-            description: answer.itemDescription
-          },
-          {
-            category: answer.category
-          },
-          {
-            score: answer.score
-          },
-          {
-            buy_link: answer.buyLink
-          },
-          {
-            video_link: answer.videoLink
-          },
-          {
-            image_link: answer.imageLink
-          },
-          {
-            review_link: answer.reviewLink
-          }
+            {
+                item_num: answer.itemNumber,
+                product_name: answer.productName,
+                description: answer.itemDescription,
+                category: answer.category,
+                score: answer.score,
+                buy_link: answer.buyLink,
+                video_link: answer.videoLink,
+                image_link: answer.imageLink,
+                review_link: answer.reviewLink
+            }
         ], function(err) {
             if (err) throw err;
 
-            console.log("Your product has been successfully added to 'surviva;_db'!");
+            console.log("Your product has been successfully added to 'survival_db'!");
             console.log("===================================================================");
             resetOption();
         })
@@ -163,26 +165,8 @@ function addItem() {
     })
  }
 
-function deleteProduct() {
-    inquirer.prompt([
-        {
-            name: "addItem",
-            type: "rawlist",
-            message: "Would you like to delete a product from the 'survival_db' database?",
-            choices: ["YES", "NO"] 
-        }
-    ]).then(function(answer) {
-        if (answer.addItem.toUpperCase() === "YES") {
-            deleteItemNumber();
-        } else {
-            console.log("*** Ok, Goodbye!");
-            connection.end(); 
-        }
-    })
-}
 
-
-  function deleteItemNumber() {
+function deleteItemNumber() {
     inquirer.prompt([
         {
             name: "itemNumberDelete",
