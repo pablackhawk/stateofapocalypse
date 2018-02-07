@@ -10,7 +10,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "postData": "node schema.js",
     "start": "nodemon index.js"
-
   },
   "repository": {
     "type": "git",
@@ -27,6 +26,7 @@
     "cheerio": "^1.0.0-rc.2",
     "express": "^4.16.2",
     "express-handlebars": "^3.0.0",
+    "inquirer": "^5.1.0",
     "method-override": "^2.3.10",
     "mysql": "^2.15.0",
     "mysql2": "^1.5.1",
