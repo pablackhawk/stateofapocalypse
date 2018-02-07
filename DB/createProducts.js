@@ -26,7 +26,7 @@ validateInteger = value => {
   }
 };
 
-function displayProducts() {
+displayProducts = () => {
   console.log('\n**** STATE OF APOCALYPSE - All Products ****');
   connection.query('SELECT * FROM Products', function(err, res) {
     for (var i = 0; i < res.length; i++) {
@@ -61,7 +61,7 @@ function displayProducts() {
   });
 }
 
-function initialize() {
+initialize = () => {
   inquirer
     .prompt([
       {
@@ -80,7 +80,7 @@ function initialize() {
     });
 }
 
-function addItem() {
+addItem = () => {
   inquirer
     .prompt([
       {
@@ -149,7 +149,7 @@ function addItem() {
     });
 }
 
-function resetOption() {
+resetOption = () => {
   inquirer
     .prompt({
       name: 'done',
@@ -171,7 +171,7 @@ function resetOption() {
     });
 }
 
-function deleteProduct() {
+deleteProduct = () => {
   inquirer
     .prompt([
       {
