@@ -59,14 +59,14 @@ displayProducts = () => {
     }
     initialize();
   });
-}
+};
 
 initialize = () => {
   inquirer
     .prompt([
       {
         name: 'addItem',
-        type: 'rawlist',
+        type: 'list',
         message: "Would you like to add a product to 'survival_db' database?",
         choices: ['YES', 'NO'],
       },
@@ -78,7 +78,7 @@ initialize = () => {
         deleteProduct();
       }
     });
-}
+};
 
 addItem = () => {
   inquirer
@@ -147,13 +147,13 @@ addItem = () => {
         }
       );
     });
-}
+};
 
 resetOption = () => {
   inquirer
     .prompt({
       name: 'done',
-      type: 'rawlist',
+      type: 'list',
       message: 'Have you done all you need?',
       choices: ['YES', 'NO'],
     })
@@ -169,14 +169,14 @@ resetOption = () => {
         displayProducts();
       }
     });
-}
+};
 
 deleteProduct = () => {
   inquirer
     .prompt([
       {
         name: 'addItem',
-        type: 'rawlist',
+        type: 'list',
         message:
           "Would you like to delete a product from the 'survival_db' database?",
         choices: ['YES', 'NO'],
@@ -190,7 +190,7 @@ deleteProduct = () => {
         connection.end();
       }
     });
-}
+};
 
 function deleteItemNumber() {
   inquirer
