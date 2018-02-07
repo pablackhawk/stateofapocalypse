@@ -18,13 +18,17 @@ $(document).ready(function() {
         // Runs through response array
         for (let i = 0; i < response.length; i++) {
           if (query === response[i].category) {
+            // Creates space for product
             let productDiv = $('<div class="products col m6 m4">');
+            // Creates product display card
             let productCard = $('<div class="card hoverable">');
+            // Creats div for product image
             let productImageDiv = $(
               '<div class="card-image waves-effect waves-block waves-light">'
             );
             let productImage = $('<img class="activator">');
             productImage.attr('src', response[i].image_link);
+            // Creates div for product text
             let cardContent = $('<div class="card-content">');
             let cardTitleDiv = $(
               '<div class="card-title activator grey-text text-darken-4">'
@@ -56,7 +60,7 @@ $(document).ready(function() {
                 response[i].buy_link +
                 '">Buy Here!</a>'
             );
-
+            // Creates the final product image and description
             productImageDiv.append(productImage);
             productCard.append(productImageDiv);
             cardContent.append(cardTitleDiv);
