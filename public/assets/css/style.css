@@ -21,6 +21,11 @@ nav .brand-logo {
   background-color: rgba(54, 54, 54, 0.904);
 }
 
+.brand-logo {
+  position: relative;
+  left: 375px;
+}
+
 .dropdown-button {
   margin-top: 1.5%;
 }
@@ -73,6 +78,8 @@ h4 {
 
 .form-button {
   margin: 0px 475px 100px 500px;
+  position: relative;
+  left: 152px;
 }
 
 .card-image {
@@ -120,6 +127,13 @@ h4 {
 
 .divider {
   margin: 3% 0;
+}
+
+.products-form {
+  margin: 1% 0;
+  height: 650px;
+  position: relative;
+  left: 370px !important;
 }
 
 footer.page-footer {
@@ -179,8 +193,10 @@ footer.page-footer p {
   left: 350px;
 }
 
-.pagination {
-  margin-bottom: 2%;
+.buy-link-form {
+  position: relative;
+  top: 260px;
+  left: 550px;
 }
 
 .dropdown-content {
@@ -192,13 +208,26 @@ footer.page-footer p {
     position: absolute;
     top: 40%;
   }
+
   #index-banner .section {
     top: 10%;
   }
+
+  .buy-link {
+    position: relative;
+    left: 270px;
+  }
+
+  .product-description {
+    padding-right: 25px;
+  }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   #index-banner .section {
     top: 0;
   }
+}
+
+@media only screen and (max-width: 575px) {
 }

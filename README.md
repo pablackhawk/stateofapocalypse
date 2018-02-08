@@ -4,11 +4,13 @@ Are you prepared for the zombie apocalypse? Find out if you are!
 
 If you're not, come check out the gear we've curated to help you make it out there when survival is up to you!
 
+[State of Apocalypse on Heroku](http://stateofapocalypse.herokuapp.com/)
+
 ## About This App
 
 This project incorporates the use of the Materialize front-end framework, along with JQuery and JavaScript for UX/UI. The site is served up with Node.js, Express and Sequelize for routing, requests, MVC and ORM functionality/methodologies.
 
-Node packages include request, method-override, body-parser and cheerio. Web Scraping is utilized as well for data extractio.
+Node packages include inquirer, request, method-override, body-parser and cheerio. Web Scraping is utilized as well for data extraction, and nightmare is used for testing.
 
 ### Technologies
 
