@@ -23,7 +23,7 @@ nav .brand-logo {
 
 .brand-logo {
   position: relative;
-  left: 375px;
+  left: 37%;
 }
 
 .dropdown-button {
@@ -203,6 +203,38 @@ footer.page-footer p {
   width: 175px !important;
 }
 
+@media only screen and (max-width: 1370px) {
+  .form-button {
+    left: 7.5%;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  .brand-logo {
+    left: 30%;
+  }
+
+  .footer-col {
+    left: -20px !important;
+  }
+
+  .buy-link {
+    left: 230px;
+  }
+
+  .product-description-div {
+    padding-right: 30px;
+  }
+
+  .form {
+    margin: 50px 200px;
+  }
+
+  .form-button {
+    left: -6%;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   .parallax-container .section {
     position: absolute;
@@ -223,9 +255,20 @@ footer.page-footer p {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 769px) {
   #index-banner .section {
     top: 0;
+  }
+  .buy-link {
+    left: 200px;
+  }
+
+  .card-title-text {
+    left: 35px;
+  }
+
+  .products {
+    height: 675px;
   }
 }
 
