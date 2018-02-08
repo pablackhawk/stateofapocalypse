@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "postData": "node schema.js",
     "start": "nodemon index.js"
   },
@@ -23,13 +23,16 @@
   "homepage": "https://github.com/pablackhawk/proj2group6#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "chai": "^4.1.2",
     "cheerio": "^1.0.0-rc.2",
     "express": "^4.16.2",
     "express-handlebars": "^3.0.0",
     "inquirer": "^5.1.0",
     "method-override": "^2.3.10",
+    "mocha": "^5.0.0",
     "mysql": "^2.15.0",
     "mysql2": "^1.5.1",
+    "nightmare": "^2.10.0",
     "nodemon": "^1.14.11",
     "request": "^2.83.0",
     "sequelize": "^4.32.2"
