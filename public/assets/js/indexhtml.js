@@ -39,7 +39,7 @@ $(document).ready(function() {
             let reviewLink = $(
               '<a class="review-link1" href="' +
                 response[i].review_link +
-                '">Reviews</a>'
+                '" target="_blank">Reviews</a>'
             );
             if (response[i].video_link !== null) {
               let videoReview = $('<video class="product-video">');
@@ -58,7 +58,7 @@ $(document).ready(function() {
             let buyLink = $(
               '<a class="buy-link" href="' +
                 response[i].buy_link +
-                '">Buy Here!</a>'
+                '" target="_blank">Buy Here!</a>'
             );
             // Creates the final product image and description
             productImageDiv.append(productImage);
