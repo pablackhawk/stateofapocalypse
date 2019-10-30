@@ -31,7 +31,7 @@
     "express-handlebars": "^3.0.0",
     "hoek": "^5.0.4",
     "inquirer": "^5.2.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "method-override": "^2.3.10",
     "mixin-deep": "^2.0.0",
     "mocha": "^5.2.0",
