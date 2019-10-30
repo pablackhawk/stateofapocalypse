@@ -33,7 +33,7 @@
     "inquirer": "^5.2.0",
     "lodash": "^4.17.11",
     "method-override": "^2.3.10",
-    "mixin-deep": "^2.0.0",
+    "mixin-deep": "^2.0.1",
     "mocha": "^5.2.0",
     "mysql": "^2.16.0",
     "mysql2": "^1.6.1",
