@@ -34,7 +34,7 @@
     "inquirer": "^5.2.0",
     "lodash": "^4.17.19",
     "method-override": "^2.3.10",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "mixin-deep": "^2.0.1",
     "mocha": "^5.2.0",
     "mysql": "^2.17.1",
